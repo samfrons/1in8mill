@@ -1,0 +1,83 @@
+[
+    {
+        "title":"BornSinner Demo",
+        "description":"Lorem Ipsum Dolor Sit Amet",
+        "date":"1/1/13",
+        "mainImg":"img/fixtures/1.png",
+        "storyImg":"img/fixtures/2.jpg",
+        "audioFile":"",
+        "audioSnippet":""
+    },
+    {
+        "title":"BornSinner Demo 2",
+        "description":"Lorem Ipsum Dolor Sit Amet",
+        "date":"1/1/13",
+        "mainImg":"img/fixtures/3.jpg",
+        "storyImg":"img/fixtures/4.png",
+        "audioFile":"",
+        "audioSnippet":""
+    },
+    {
+        "title":"BornSinner Demo 3",
+        "description":"Lorem Ipsum Dolor Sit Amet",
+        "date":"1/1/13",
+        "mainImg":"img/fixtures/6.jpg",
+        "storyImg":"img/fixtures/5.jpg",
+        "audioFile":"",
+        "audioSnippet":""
+    },
+    {
+        "title":"BornSinner Demo",
+        "description":"Lorem Ipsum Dolor Sit Amet",
+        "date":"1/1/13",
+        "mainImg":"img/fixtures/2.jpg",
+        "storyImg":"img/fixtures/1.png",
+        "audioFile":"",
+        "audioSnippet":""
+    },
+    {
+        "title":"BornSinner Demo 2",
+        "description":"Lorem Ipsum Dolor Sit Amet",
+        "date":"1/1/13",
+        "mainImg":"img/fixtures/4.png",
+        "storyImg":"img/fixtures/3.jpg",
+        "audioFile":"",
+        "audioSnippet":""
+    },
+    {
+        "title":"BornSinner Demo 3",
+        "description":"Lorem Ipsum Dolor Sit Amet",
+        "date":"1/1/13",
+        "mainImg":"img/fixtures/5.jpg",
+        "storyImg":"img/fixtures/6.jpg",
+        "audioFile":"",
+        "audioSnippet":""
+    },
+    {
+        "title":"BornSinner Demo",
+        "description":"Lorem Ipsum Dolor Sit Amet",
+        "date":"1/1/13",
+        "mainImg":"img/fixtures/1.png",
+        "storyImg":"img/fixtures/2.jpg",
+        "audioFile":"",
+        "audioSnippet":""
+    },
+    {
+        "title":"BornSinner Demo 2",
+        "description":"Lorem Ipsum Dolor Sit Amet",
+        "date":"1/1/13",
+        "mainImg":"img/fixtures/3.jpg",
+        "storyImg":"img/fixtures/4.png",
+        "audioFile":"",
+        "audioSnippet":""
+    },
+    {
+        "title":"BornSinner Demo 3",
+        "description":"Lorem Ipsum Dolor Sit Amet",
+        "date":"1/1/13",
+        "mainImg":"img/fixtures/6.jpg",
+        "storyImg":"img/fixtures/5.jpg",
+        "audioFile":"",
+        "audioSnippet":""
+    }
+]

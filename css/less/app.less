@@ -1,0 +1,92 @@
+@import 'bootstrap/bootstrap.less';
+
+/* .makeColumn() is one of the most useful mixins here, this is a modified version of bootstrap (wk) which has more columns (20), .makeColumn(20) will generate full page width */
+
+html, body {
+    background: #000;
+    color: #fff;
+    .clear {
+        .clearfix();
+    }
+    .content {
+        background: #000;
+        .topbar {
+            margin-bottom: 5px;
+            #logo {
+                .clearfix();
+            }
+            .clearfix();
+            width: 100%;
+        }
+        .stories {
+            .clearfix();
+            width: 100%;
+            overflow: hidden;
+            .storyContent {
+                background: url('../img/background.jpg?127') no-repeat;
+                width: 100%;
+                overflow-x: scroll;
+                overflow-y: hidden;
+                background-size: 4000px;
+                height: 0px;
+                .clearfix();
+                #storyItems {
+                    #storyItemsWrapper {
+                        width: 1000px;
+                        padding: 10px 40px 10px 40px;
+                        .storyItemWrap {
+                            padding: 20px;
+                            margin: 10px;
+                            float: left;
+                            border: 10px solid rgba(0,0,0,.5);
+                            width: 500px;
+                            .hoverStory {
+                                opacity: 0.8;
+                            }
+                            .storyItem {
+                                margin-left: auto;
+                                margin-right: auto;
+                                width: 500px;
+                                height: 250px;
+                                text-align: center;
+                                overflow: hidden;
+                                .mainImage {
+                                    width: 300px;
+                                }
+                                .storyItemContent {
+                                    width: 100%;
+                                    .clearfix();
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+            .storyNav {
+                width: 100%;
+                height: 40px;
+                background: #1d1d1d;
+                .clearfix();
+                width: 100%;
+                .navWrap {
+                    margin-left: auto;
+                    margin-right: auto;
+                    width: 250px;
+                    padding-top: 7px;
+                    ul {
+                        display: inline;
+                        list-style: none;
+                        .navItem {
+                            display: block;
+                            float: left;
+                            width: 20px;
+                            height: 20px;
+                            background: #6d6d6d;
+                            margin: 2px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
