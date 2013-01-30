@@ -12,7 +12,7 @@ StoriesCollection = (function(_super) {
 
   StoriesCollection.prototype.model = StoryModel;
 
-  StoriesCollection.prototype.url = 'js/fixtures/stories.json?129';
+  StoriesCollection.prototype.url = 'js/fixtures/stories.json?131';
 
   return StoriesCollection;
 

@@ -41,7 +41,7 @@ When we're ready for release, we do two things:
 *Templates -> [jade](templates/jade) (compiles to /static (handlebars))
 *CSS -> [less](css/less)
 *Annotated Documentation -> [Docs](docs/)
-*Fixture Data -> [fixtures](js/fixtures)
+*Fixture Data -> [fixtures](js/fixtu)
 
 ###TODO:
 -----

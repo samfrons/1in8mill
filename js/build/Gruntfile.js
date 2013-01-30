@@ -13,7 +13,7 @@ module.exports = function(grunt) {
                 dependencies: [
                     // <dependencies>
                       '../vendor/jquery.js', '../vendor/underscore-min.js', '../vendor/backbone-min.js', '../vendor/modernizr-2.6.2.min.js',
-                      '../vendor/handlebars.min.js', '../vendor/jquery.animate-enhanced.min.js', '../helper.js','../vendor/jquery.scrollTo.min.js',
+                      '../vendor/handlebars.min.js', '../vendor/jquery.animate-enhanced.min.js', '../helper.js','../vendor/jquery.scrollTo.min.js','../vendor/jquery.color.js',
                       //<bootstrap>
                       '../vendor/bootstrap/bootstrap-transition.js', '../vendor/bootstrap/bootstrap-alert.js', '../vendor/bootstrap/bootstrap-button.js'
                       , '../vendor/bootstrap/bootstrap-carousel.js', '../vendor/bootstrap/bootstrap-collapse.js', '../vendor/bootstrap/bootstrap-dropdown.js'

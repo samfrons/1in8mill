@@ -32,12 +32,14 @@ class StoriesView extends Backbone.View
         
         #append each one independently
         _subel.append _view.render(model.toJSON())
+        console.log model.toJSON() 
         
         #resize the images to their parent
         $('.mainImage').fitToParent()
         
         #create the nav
-        $('.navWrap ul').append(app.templates['partials/navItem']({model:model.toJSON(), i:i}))
+        $('.navWrap ul').append(app.templates['partials/navItem'](model.toJSON()))
   
     $('#storyItemsWrapper').width((app.collections.stories.models.length+1) * 580)
     app.views.main.postRender()
+    

@@ -6,7 +6,7 @@ this["app"]["templates"]["application"] = Handlebars.template(function (Handleba
   
 
 
-  return "\n<div class=\"wrapper\">\n  <div class=\"topbar\"><img id=\"logo\" src=\"img/bornsinner-small.jpg\"/></div>\n  <div class=\"stories\">\n    <div class=\"storyContent\">\n      <div id=\"storyItems\"></div>\n    </div>\n    <div class=\"storyNav\">\n      <div class=\"navWrap\">\n        <ul></ul>\n      </div>\n    </div>\n  </div>\n</div>";});
+  return "\n<div class=\"wrapper\">\n  <div class=\"topbar\"><img id=\"logo\" src=\"resources/img/bornsinner-small.jpg\"/></div>\n  <div class=\"stories\">\n    <div class=\"storyContent\">\n      <div id=\"storyItems\"></div>\n    </div>\n    <div class=\"storyNav\">\n      <div class=\"navWrap\">\n        <ul></ul>\n      </div>\n    </div>\n  </div>\n</div>";});
 
 this["app"]["templates"]["stories"] = Handlebars.template(function (Handlebars,depth0,helpers,partials,data) {
   helpers = helpers || Handlebars.helpers; data = data || {};
@@ -20,7 +20,11 @@ this["app"]["templates"]["story"] = Handlebars.template(function (Handlebars,dep
   var buffer = "", stack1, foundHelper, functionType="function", escapeExpression=this.escapeExpression;
 
 
-  buffer += "\n<div class=\"storyItemWrap\">\n  <div class=\"storyItem\"><img src=\"";
+  buffer += "\n<div data-record=\"";
+  foundHelper = helpers.id;
+  if (foundHelper) { stack1 = foundHelper.call(depth0, {hash:{},data:data}); }
+  else { stack1 = depth0.id; stack1 = typeof stack1 === functionType ? stack1.apply(depth0) : stack1; }
+  buffer += escapeExpression(stack1) + "\" class=\"storyItemWrap\">\n  <div class=\"storyItem\"><img src=\"";
   foundHelper = helpers.mainImg;
   if (foundHelper) { stack1 = foundHelper.call(depth0, {hash:{},data:data}); }
   else { stack1 = depth0.mainImg; stack1 = typeof stack1 === functionType ? stack1.apply(depth0) : stack1; }
@@ -52,8 +56,8 @@ this["app"]["templates"]["partials/navItem"] = Handlebars.template(function (Han
 
 
   buffer += "\n<li data-story=\"";
-  foundHelper = helpers['i'];
+  foundHelper = helpers.id;
   if (foundHelper) { stack1 = foundHelper.call(depth0, {hash:{},data:data}); }
-  else { stack1 = depth0['i']; stack1 = typeof stack1 === functionType ? stack1.apply(depth0) : stack1; }
+  else { stack1 = depth0.id; stack1 = typeof stack1 === functionType ? stack1.apply(depth0) : stack1; }
   buffer += escapeExpression(stack1) + "\" class=\"navItem\"></li>";
   return buffer;});

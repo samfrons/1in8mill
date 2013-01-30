@@ -1,0 +1,147 @@
+0 info it worked if it ends with ok
+1 verbose cli [ 'node', '/usr/local/bin/npm', 'install' ]
+2 info using npm@1.1.70
+3 info using node@v0.8.7
+4 verbose read json /Applications/MAMP/htdocs/personal/sonomavc/Apps/jCole/js/build/package.json
+5 verbose readDependencies using package.json deps
+6 verbose install where, deps [ '/Applications/MAMP/htdocs/personal/sonomavc/Apps/jCole/js/build',
+6 verbose install   [ 'grunt',
+6 verbose install     'grunt-contrib-nodeunit',
+6 verbose install     'grunt-contrib',
+6 verbose install     'grunt-recess',
+6 verbose install     'uglify-js',
+6 verbose install     'grunt-contrib-concat',
+6 verbose install     'grunt-contrib-qunit',
+6 verbose install     'grunt-contrib-jshint',
+6 verbose install     'grunt-contrib-watch',
+6 verbose install     'grunt-contrib-less',
+6 verbose install     'grunt-contrib-uglify',
+6 verbose install     'grunt-contrib-clean',
+6 verbose install     'grunt-contrib-jade' ] ]
+7 verbose from cache /Applications/MAMP/htdocs/personal/sonomavc/Apps/jCole/js/build/package.json
+8 info preinstall BornSinnerGallery@0.1.0
+9 verbose read json /Applications/MAMP/htdocs/personal/sonomavc/Apps/jCole/js/build/node_modules/grunt/package.json
+10 verbose read json /Applications/MAMP/htdocs/personal/sonomavc/Apps/jCole/js/build/node_modules/grunt-contrib/package.json
+11 verbose read json /Applications/MAMP/htdocs/personal/sonomavc/Apps/jCole/js/build/node_modules/grunt-contrib-clean/package.json
+12 verbose read json /Applications/MAMP/htdocs/personal/sonomavc/Apps/jCole/js/build/node_modules/grunt-contrib-concat/package.json
+13 verbose read json /Applications/MAMP/htdocs/personal/sonomavc/Apps/jCole/js/build/node_modules/grunt-contrib-jade/package.json
+14 verbose read json /Applications/MAMP/htdocs/personal/sonomavc/Apps/jCole/js/build/node_modules/grunt-contrib-jshint/package.json
+15 verbose read json /Applications/MAMP/htdocs/personal/sonomavc/Apps/jCole/js/build/node_modules/grunt-contrib-less/package.json
+16 verbose read json /Applications/MAMP/htdocs/personal/sonomavc/Apps/jCole/js/build/node_modules/grunt-contrib-nodeunit/package.json
+17 verbose read json /Applications/MAMP/htdocs/personal/sonomavc/Apps/jCole/js/build/node_modules/grunt-contrib-qunit/package.json
+18 verbose read json /Applications/MAMP/htdocs/personal/sonomavc/Apps/jCole/js/build/node_modules/grunt-contrib-uglify/package.json
+19 verbose read json /Applications/MAMP/htdocs/personal/sonomavc/Apps/jCole/js/build/node_modules/grunt-contrib-watch/package.json
+20 verbose read json /Applications/MAMP/htdocs/personal/sonomavc/Apps/jCole/js/build/node_modules/grunt-recess/package.json
+21 verbose read json /Applications/MAMP/htdocs/personal/sonomavc/Apps/jCole/js/build/node_modules/uglify-js/package.json
+22 verbose from cache /Applications/MAMP/htdocs/personal/sonomavc/Apps/jCole/js/build/package.json
+23 verbose readDependencies using package.json deps
+24 verbose read json /Applications/MAMP/htdocs/personal/sonomavc/Apps/jCole/js/build/node_modules/.bin/package.json
+25 verbose from cache /Applications/MAMP/htdocs/personal/sonomavc/Apps/jCole/js/build/node_modules/grunt/package.json
+26 verbose from cache /Applications/MAMP/htdocs/personal/sonomavc/Apps/jCole/js/build/node_modules/grunt-contrib/package.json
+27 verbose from cache /Applications/MAMP/htdocs/personal/sonomavc/Apps/jCole/js/build/node_modules/grunt-contrib-clean/package.json
+28 verbose from cache /Applications/MAMP/htdocs/personal/sonomavc/Apps/jCole/js/build/node_modules/grunt-contrib-concat/package.json
+29 verbose from cache /Applications/MAMP/htdocs/personal/sonomavc/Apps/jCole/js/build/node_modules/grunt-contrib-jade/package.json
+30 verbose from cache /Applications/MAMP/htdocs/personal/sonomavc/Apps/jCole/js/build/node_modules/grunt-contrib-jshint/package.json
+31 verbose from cache /Applications/MAMP/htdocs/personal/sonomavc/Apps/jCole/js/build/node_modules/grunt-contrib-less/package.json
+32 verbose from cache /Applications/MAMP/htdocs/personal/sonomavc/Apps/jCole/js/build/node_modules/grunt-contrib-nodeunit/package.json
+33 verbose from cache /Applications/MAMP/htdocs/personal/sonomavc/Apps/jCole/js/build/node_modules/grunt-contrib-qunit/package.json
+34 verbose from cache /Applications/MAMP/htdocs/personal/sonomavc/Apps/jCole/js/build/node_modules/grunt-contrib-uglify/package.json
+35 verbose from cache /Applications/MAMP/htdocs/personal/sonomavc/Apps/jCole/js/build/node_modules/grunt-contrib-watch/package.json
+36 verbose from cache /Applications/MAMP/htdocs/personal/sonomavc/Apps/jCole/js/build/node_modules/grunt-recess/package.json
+37 verbose from cache /Applications/MAMP/htdocs/personal/sonomavc/Apps/jCole/js/build/node_modules/uglify-js/package.json
+38 verbose already installed skipping uglify-js@>=1.3.4 /Applications/MAMP/htdocs/personal/sonomavc/Apps/jCole/js/build
+39 verbose already installed skipping grunt-contrib-concat@~0.1.1 /Applications/MAMP/htdocs/personal/sonomavc/Apps/jCole/js/build
+40 verbose already installed skipping grunt-contrib-qunit@~0.1.0 /Applications/MAMP/htdocs/personal/sonomavc/Apps/jCole/js/build
+41 verbose already installed skipping grunt-contrib-jshint@~0.1.0 /Applications/MAMP/htdocs/personal/sonomavc/Apps/jCole/js/build
+42 verbose already installed skipping grunt-contrib-watch@~0.1.4 /Applications/MAMP/htdocs/personal/sonomavc/Apps/jCole/js/build
+43 verbose already installed skipping grunt-contrib-less@~0.3.2 /Applications/MAMP/htdocs/personal/sonomavc/Apps/jCole/js/build
+44 verbose already installed skipping grunt-contrib-uglify@~0.1.0 /Applications/MAMP/htdocs/personal/sonomavc/Apps/jCole/js/build
+45 verbose already installed skipping grunt-contrib-clean@~0.4.0a /Applications/MAMP/htdocs/personal/sonomavc/Apps/jCole/js/build
+46 verbose cache add [ 'grunt-contrib-jade@https://github.com/Dignifiedquire/grunt-contrib-jade/tarball/multiple',
+46 verbose cache add   null ]
+47 silly cache add name=undefined spec="grunt-contrib-jade@https://github.com/Dignifiedquire/grunt-contrib-jade/tarball/multiple" args=["grunt-contrib-jade@https://github.com/Dignifiedquire/grunt-contrib-jade/tarball/multiple",null]
+48 verbose parsed url { pathname: 'grunt-contrib-jade@https://github.com/Dignifiedquire/grunt-contrib-jade/tarball/multiple',
+48 verbose parsed url   path: 'grunt-contrib-jade@https://github.com/Dignifiedquire/grunt-contrib-jade/tarball/multiple',
+48 verbose parsed url   href: 'grunt-contrib-jade@https://github.com/Dignifiedquire/grunt-contrib-jade/tarball/multiple' }
+49 silly cache add name="grunt-contrib-jade" spec="https://github.com/Dignifiedquire/grunt-contrib-jade/tarball/multiple" args=["grunt-contrib-jade","https://github.com/Dignifiedquire/grunt-contrib-jade/tarball/multiple"]
+50 verbose parsed url { protocol: 'https:',
+50 verbose parsed url   slashes: true,
+50 verbose parsed url   host: 'github.com',
+50 verbose parsed url   hostname: 'github.com',
+50 verbose parsed url   href: 'https://github.com/Dignifiedquire/grunt-contrib-jade/tarball/multiple',
+50 verbose parsed url   pathname: '/Dignifiedquire/grunt-contrib-jade/tarball/multiple',
+50 verbose parsed url   path: '/Dignifiedquire/grunt-contrib-jade/tarball/multiple' }
+51 silly lockFile 3a4ad052-nt-contrib-jade-tarball-multiple https://github.com/Dignifiedquire/grunt-contrib-jade/tarball/multiple
+52 verbose lock https://github.com/Dignifiedquire/grunt-contrib-jade/tarball/multiple /Users/william/.npm/3a4ad052-nt-contrib-jade-tarball-multiple.lock
+53 verbose addRemoteTarball [ 'https://github.com/Dignifiedquire/grunt-contrib-jade/tarball/multiple',
+53 verbose addRemoteTarball   null ]
+54 info retry fetch attempt 1 at 23:12:48
+55 verbose fetch to= /var/folders/48/gz2rckc56_g4vzgvrwrkgcp00000gn/T/npm-9176/1358752368218-0.33040265017189085/tmp.tgz
+56 http GET https://github.com/Dignifiedquire/grunt-contrib-jade/tarball/multiple
+57 verbose already installed skipping grunt-contrib-nodeunit@~0.1.0 /Applications/MAMP/htdocs/personal/sonomavc/Apps/jCole/js/build
+58 verbose cache add [ 'grunt@0.4.0', null ]
+59 silly cache add name=undefined spec="grunt@0.4.0" args=["grunt@0.4.0",null]
+60 verbose parsed url { pathname: 'grunt@0.4.0',
+60 verbose parsed url   path: 'grunt@0.4.0',
+60 verbose parsed url   href: 'grunt@0.4.0' }
+61 silly cache add name="grunt" spec="0.4.0" args=["grunt","0.4.0"]
+62 verbose parsed url { pathname: '0.4.0', path: '0.4.0', href: '0.4.0' }
+63 verbose addNamed [ 'grunt', '0.4.0' ]
+64 verbose addNamed [ '0.4.0', '0.4.0' ]
+65 silly lockFile 5fc621a7-grunt-0-4-0 grunt@0.4.0
+66 verbose lock grunt@0.4.0 /Users/william/.npm/5fc621a7-grunt-0-4-0.lock
+67 verbose already installed skipping grunt-contrib@>=0.3.0 /Applications/MAMP/htdocs/personal/sonomavc/Apps/jCole/js/build
+68 verbose cache add [ 'grunt-recess@git://github.com/Wkasel/grunt-contrib-recess.git',
+68 verbose cache add   null ]
+69 silly cache add name=undefined spec="grunt-recess@git://github.com/Wkasel/grunt-contrib-recess.git" args=["grunt-recess@git://github.com/Wkasel/grunt-contrib-recess.git",null]
+70 verbose parsed url { pathname: 'grunt-recess@git://github.com/Wkasel/grunt-contrib-recess.git',
+70 verbose parsed url   path: 'grunt-recess@git://github.com/Wkasel/grunt-contrib-recess.git',
+70 verbose parsed url   href: 'grunt-recess@git://github.com/Wkasel/grunt-contrib-recess.git' }
+71 silly cache add name="grunt-recess" spec="git://github.com/Wkasel/grunt-contrib-recess.git" args=["grunt-recess","git://github.com/Wkasel/grunt-contrib-recess.git"]
+72 verbose parsed url { protocol: 'git:',
+72 verbose parsed url   slashes: true,
+72 verbose parsed url   host: 'github.com',
+72 verbose parsed url   hostname: 'github.com',
+72 verbose parsed url   href: 'git://github.com/Wkasel/grunt-contrib-recess.git',
+72 verbose parsed url   pathname: '/Wkasel/grunt-contrib-recess.git',
+72 verbose parsed url   path: '/Wkasel/grunt-contrib-recess.git' }
+73 silly lockFile f331179b--Wkasel-grunt-contrib-recess-git git://github.com/Wkasel/grunt-contrib-recess.git
+74 verbose lock git://github.com/Wkasel/grunt-contrib-recess.git /Users/william/.npm/f331179b--Wkasel-grunt-contrib-recess-git.lock
+75 verbose addRemoteGit [ 'git://github.com/Wkasel/grunt-contrib-recess.git', 'master' ]
+76 verbose url raw grunt/0.4.0
+77 verbose url resolving [ 'https://registry.npmjs.org/', './grunt/0.4.0' ]
+78 verbose url resolved https://registry.npmjs.org/grunt/0.4.0
+79 info trying registry request attempt 1 at 23:12:48
+80 http GET https://registry.npmjs.org/grunt/0.4.0
+81 silly exec git "clone" "git://github.com/Wkasel/grunt-contrib-recess.git" "/var/folders/48/gz2rckc56_g4vzgvrwrkgcp00000gn/T/npm-9176/1358752368269-0.8514424259774387"
+82 silly git,clone,git://github.com/Wkasel/grunt-contrib-recess.git,/var/folders/48/gz2rckc56_g4vzgvrwrkgcp00000gn/T/npm-9176/1358752368269-0.8514424259774387, spawning
+83 http 404 https://registry.npmjs.org/grunt/0.4.0
+84 silly registry.get cb [ 404,
+84 silly registry.get   { vary: 'Accept',
+84 silly registry.get     server: 'CouchDB/1.2.1 (Erlang OTP/R15B)',
+84 silly registry.get     etag: '"3TH5EOZ1AFT676BGEI079FKLB"',
+84 silly registry.get     date: 'Mon, 21 Jan 2013 07:11:15 GMT',
+84 silly registry.get     'content-type': 'application/json',
+84 silly registry.get     'content-length': '36' } ]
+85 silly lockFile 5fc621a7-grunt-0-4-0 grunt@0.4.0
+86 error Error: version not found: 0.4.0 : grunt/0.4.0
+86 error     at RegClient.<anonymous> (/usr/local/lib/node_modules/npm/node_modules/npm-registry-client/lib/request.js:259:14)
+86 error     at Request.init.self.callback (/usr/local/lib/node_modules/npm/node_modules/request/main.js:120:22)
+86 error     at Request.EventEmitter.emit (events.js:91:17)
+86 error     at Request.<anonymous> (/usr/local/lib/node_modules/npm/node_modules/request/main.js:648:16)
+86 error     at Request.EventEmitter.emit (events.js:115:20)
+86 error     at IncomingMessage.Request.start.self.req.self.httpModule.request.buffer (/usr/local/lib/node_modules/npm/node_modules/request/main.js:610:14)
+86 error     at IncomingMessage.EventEmitter.emit (events.js:115:20)
+86 error     at IncomingMessage._emitEnd (http.js:366:10)
+86 error     at HTTPParser.parserOnMessageComplete [as onMessageComplete] (http.js:149:23)
+86 error     at CleartextStream.socketOnData (http.js:1366:20)
+87 error If you need help, you may report this log at:
+87 error     <http://github.com/isaacs/npm/issues>
+87 error or email it to:
+87 error     <npm-@googlegroups.com>
+88 error System Darwin 12.0.0
+89 error command "node" "/usr/local/bin/npm" "install"
+90 error cwd /Applications/MAMP/htdocs/personal/sonomavc/Apps/jCole/js/build
+91 error node -v v0.8.7
+92 error npm -v 1.1.70
+93 verbose exit [ 1, true ]

@@ -7,6 +7,7 @@ class MainView extends Backbone.View
   events:
     'hover .mainImage': 'fadeStory'
     'click .navItem':'navClick'
+    'click .storyItemWrap':'openStory'
     
   render: ->
     $('.storyContent').height(0)
@@ -18,7 +19,7 @@ class MainView extends Backbone.View
     @scrollTimeline(app.collections.stories.models.length, 800)
     $('.storyContent').animate({height:'+=450px'}, 800)
     setTimeout (_this) -> 
-        _this.scrollTimeline(0, 800)
+        _this.scrollTimeline(1, 800)
       , 2000, app.views.main
     @bindersFullOfWomen()
   
@@ -36,10 +37,44 @@ class MainView extends Backbone.View
   navClick: (e) ->
     @scrollTimeline($(e.currentTarget).data('story'))
     
-  scrollTimeline:(index, callback) ->
-    story = index+1
+  scrollTimeline:(story, callback) ->
     story_width = 580
     scroll = ((story*story_width)-story_width)
     console.log scroll
     $('.storyContent').scrollTo(scroll,1000)  
     # $(e.currentTarget).scrollTo()
+    $('.storyItemsWrapper > *[data-record="'+story+'"]'); #highlight this
+    
+  openStory: (e) ->
+    window.EVENTDEBUG = e
+    _this = @
+    story = $(e.currentTarget).data('record') 
+    others = $('#storyItemsWrapper  > :not(*[data-record="'+story+'"])'); #... the *others*... voted off the island (array of dom objects)
+    $(@el).on 'jcbs:stories:hidden', () ->
+      $('#storyItemsWrapper').children().wrap('<div id="storyWrapBG"/>')
+      $('#storyWrapBG').width($('.storyContent').width())
+      $('#storyWrapBG').height($('.storyContent').height())
+      $('#storyWrapBG').append('<div class="clear"></div>')
+      console.log(e.currentTarget)
+      $(e.currentTarget).fadeOut(500, () ->
+        console.log('fadeout complete')
+        # $(e.currentTarget).fadeOut()
+        $('#storyWrapBG').fadeIn()
+      )
+
+      
+    
+    _.each others, (other, i) ->
+      $(other).fadeOut 800, () ->
+        
+      i++
+      if i >= others.length
+        setTimeout (_this) ->
+            $(_this.el).trigger('jcbs:stories:hidden')
+          , 800, app.views.main
+        
+        
+    
+    console.log(story)
+    
+    

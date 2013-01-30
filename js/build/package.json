@@ -15,7 +15,7 @@
     "url": "https://github.com/samfrons/1in8mill/issues"
   },
   "devDependencies": {
-    "grunt": "~0.4.0",
+    "grunt": "0.4.0",
     "grunt-contrib-nodeunit": "~0.1.0",
     "grunt-contrib": ">=0.3.0",
     "grunt-recess": "git://github.com/Wkasel/grunt-contrib-recess.git",

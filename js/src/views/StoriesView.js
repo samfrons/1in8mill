@@ -39,11 +39,9 @@ StoriesView = (function(_super) {
       var _view;
       _view = new StoryView();
       _subel.append(_view.render(model.toJSON()));
+      console.log(model.toJSON());
       $('.mainImage').fitToParent();
-      return $('.navWrap ul').append(app.templates['partials/navItem']({
-        model: model.toJSON(),
-        i: i
-      }));
+      return $('.navWrap ul').append(app.templates['partials/navItem'](model.toJSON()));
     });
     $('#storyItemsWrapper').width((app.collections.stories.models.length + 1) * 580);
     return app.views.main.postRender();
