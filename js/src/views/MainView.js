@@ -58,6 +58,39 @@ MainView = (function(_super) {
     return $('.storyItemsWrapper > *[data-record="' + story + '"]');
   };
 
+  MainView.prototype.renderFullStory = function(id, _el) {
+    var i, _closeStory, _int, _model, _render, _this;
+    _this = this;
+    _model = app.collections.stories.models[id - 1];
+    window.DEBUGSTORYMODEL = _model;
+    _render = function(_image) {
+      console.log('render called', _image);
+      _el.html(app.templates['fullstory']({
+        data: {
+          title: _model.get('title'),
+          description: _model.get('descriotion'),
+          date: _model.get('date'),
+          image: _image
+        }
+      }));
+      return console.log(_model.get('title'), _model);
+    };
+    i = 0;
+    _closeStory = function(interval) {
+      clearInterval(interval);
+      return console.log('close story called');
+    };
+    return _int = setInterval(function() {
+      console.log('interval called', i);
+      if (i <= _model.get('storyImg').length) {
+        _render(_model.get('storyImg')[i]);
+        return i = i + 1;
+      } else {
+        return _closeStory(_int);
+      }
+    }, 500);
+  };
+
   MainView.prototype.openStory = function(e) {
     var others, story, _this;
     window.EVENTDEBUG = e;
@@ -65,14 +98,19 @@ MainView = (function(_super) {
     story = $(e.currentTarget).data('record');
     others = $('#storyItemsWrapper  > :not(*[data-record="' + story + '"])');
     $(this.el).on('jcbs:stories:hidden', function() {
+      var _id, _record;
       $('#storyItemsWrapper').children().wrap('<div id="storyWrapBG"/>');
       $('#storyWrapBG').width($('.storyContent').width());
       $('#storyWrapBG').height($('.storyContent').height());
       $('#storyWrapBG').append('<div class="clear"></div>');
-      console.log(e.currentTarget);
-      return $(e.currentTarget).fadeOut(500, function() {
+      _record = $(e.currentTarget).data('record');
+      _id = 'story-item-' + _record;
+      $(e.currentTarget).attr('id', _id);
+      console.log('#' + _id);
+      $('#storyWrapBG').fadeIn();
+      return $('#' + _id).fadeOut(1000, function() {
         console.log('fadeout complete');
-        return $('#storyWrapBG').fadeIn();
+        return _this.renderFullStory(_record, $('#storyWrapBG'));
       });
     });
     _.each(others, function(other, i) {

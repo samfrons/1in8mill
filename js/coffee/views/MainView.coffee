@@ -44,23 +44,69 @@ class MainView extends Backbone.View
     $('.storyContent').scrollTo(scroll,1000)  
     # $(e.currentTarget).scrollTo()
     $('.storyItemsWrapper > *[data-record="'+story+'"]'); #highlight this
+  
+  renderFullStory:(id,_el) ->
+    _this = @
+    _model = app.collections.stories.models[id-1]
+    window.DEBUGSTORYMODEL = _model
+    _render = (_image) ->
+      console.log('render called', _image)
+      _el.html app.templates['fullstory']({
+        data: {
+          title: _model.get('title')
+          description: _model.get('descriotion')
+          date: _model.get('date')
+          image: _image
+        }
+      })
+      console.log(_model.get('title'), _model)
+      # _el.fadeOut(300, () ->
+      #         
+      #         _el.fadeIn(300)
+      #       )
+    
+    i = 0
+    _closeStory = (interval) ->
+      clearInterval(interval)
+      console.log('close story called')
+      
+    _int = setInterval(() ->
+        console.log('interval called', i)
+        if i <= _model.get('storyImg').length
+          _render(_model.get('storyImg')[i])
+          i=i+1 #i++ not working?
+        else
+          _closeStory(_int)
+      , 500)
+    
+    
     
   openStory: (e) ->
+    #refs 
     window.EVENTDEBUG = e
     _this = @
     story = $(e.currentTarget).data('record') 
     others = $('#storyItemsWrapper  > :not(*[data-record="'+story+'"])'); #... the *others*... voted off the island (array of dom objects)
+    
+    
     $(@el).on 'jcbs:stories:hidden', () ->
       $('#storyItemsWrapper').children().wrap('<div id="storyWrapBG"/>')
       $('#storyWrapBG').width($('.storyContent').width())
       $('#storyWrapBG').height($('.storyContent').height())
       $('#storyWrapBG').append('<div class="clear"></div>')
-      console.log(e.currentTarget)
-      $(e.currentTarget).fadeOut(500, () ->
-        console.log('fadeout complete')
-        # $(e.currentTarget).fadeOut()
-        $('#storyWrapBG').fadeIn()
-      )
+        
+      _record = $(e.currentTarget).data('record')
+      _id = 'story-item-'+_record
+      
+      $(e.currentTarget).attr('id',_id)
+      console.log('#'+_id)
+      $('#storyWrapBG').fadeIn()
+      $('#'+_id).fadeOut(1000, () ->
+          console.log('fadeout complete')
+          #now is time to append the new story
+          _this.renderFullStory(_record,$('#storyWrapBG'))
+        )
+      
 
       
     
